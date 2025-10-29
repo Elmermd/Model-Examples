@@ -2,7 +2,7 @@
 
 Educational examples demonstrating machine learning concepts with clear, step-by-step explanations.
 
-## 📚 Examples
+##  Examples
 
 ### Decision Trees
 
@@ -12,7 +12,7 @@ Educational examples demonstrating machine learning concepts with clear, step-by
   - Trace individual predictions through the tree
   - Visualize sample distribution in leaves
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -27,19 +27,19 @@ pip install -r requirements.txt
 python examples/decision_tree_samples_and_leaves.py
 ```
 
-## 📖 What You'll Learn
+##  What You'll Learn
 
 - **Samples vs Features**: Clear distinction between observations (rows) and attributes (columns)
 - **Tree Structure**: How nodes make decisions and route samples to leaves
 - **Predictions**: How the tree averages values in leaves to make predictions
 - **Visualization**: Reading sklearn's decision tree plots
 
-## 🎯 Who Is This For?
+##  Who Is This For?
 
 - Beginners learning machine learning
 - Students studying decision trees
 - Anyone who wants to understand ML models at a deeper level
 
-## 📝 License
+##  License
 
 MIT License - Feel free to use for learning and teaching!

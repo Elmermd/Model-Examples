@@ -121,7 +121,7 @@ for i in range(n_nodes):
     predicted_value = tree.value[i][0][0]
 
     print(f"\nNODE {i}:")
-    print(f"  Type: {'🍃 LEAF (final node)' if is_leaf else '🌿 INTERNAL NODE (makes a question)'}")
+    print(f"  Type: {' LEAF (final node)' if is_leaf else ' INTERNAL NODE (makes a question)'}")
     print(f"  Number of samples: {n_samples} people")
     print(f"  Average value: ${predicted_value:.2f}k")
 
@@ -136,7 +136,7 @@ for i in range(n_nodes):
         print(f"    → YES: goes to Node {left_child}")
         print(f"    → NO: goes to Node {right_child}")
     else:
-        print(f"  💰 FINAL PREDICTION: ${predicted_value:.2f}k")
+        print(f"   FINAL PREDICTION: ${predicted_value:.2f}k")
         print(f"  (This is the average of the {n_samples} samples that reached here)")
 
 # ============================================================================
@@ -166,7 +166,7 @@ for i, node_id in enumerate(nodes_visited):
     value = tree.value[node_id][0][0]
 
     print(f"\n  Step {i+1} - NODE {node_id}:")
-    print(f"    Type: {'🍃 LEAF' if is_leaf else '🌿 NODE'}")
+    print(f"    Type: {' LEAF' if is_leaf else ' NODE'}")
     print(f"    Samples here: {n_samples} people")
     print(f"    Average: ${value:.2f}k")
 
@@ -180,10 +180,10 @@ for i, node_id in enumerate(nodes_visited):
         print(f"    This person's value: {person_value}")
         print(f"    Answer: {answer}")
     else:
-        print(f"    💰 FINAL PREDICTION: ${value:.2f}k")
+        print(f"     FINAL PREDICTION: ${value:.2f}k")
 
 prediction = tree_model.predict(sample_example)[0]
-print(f"\n🎯 RESULT:")
+print(f"\n RESULT:")
 print(f"  Tree prediction: ${prediction:.2f}k")
 print(f"  Real salary: ${real_salary}k")
 print(f"  Error: ${abs(real_salary - prediction):.2f}k")
@@ -196,7 +196,7 @@ print("="*80)
 # Get which leaf each sample reaches
 assigned_leaves = tree_model.apply(X)
 
-print("\n📋 SAMPLE ASSIGNMENT TO LEAVES:")
+print("\n SAMPLE ASSIGNMENT TO LEAVES:")
 print("="*80)
 
 # Create DataFrame with assignments
@@ -215,7 +215,7 @@ for leaf_id in df_assignment['assigned_leaf'].unique():
     avg_salary = samples_in_leaf['salary_thousands'].mean()
     leaf_prediction = samples_in_leaf['prediction'].iloc[0]
 
-    print(f"\n🍃 LEAF {leaf_id}:")
+    print(f"\n LEAF {leaf_id}:")
     print(f"  Number of samples: {n_samples} people")
     print(f"  Sample IDs: {samples_in_leaf.index.tolist()}")
     print(f"  Real average salary: ${avg_salary:.2f}k")

@@ -6,11 +6,17 @@ Educational examples demonstrating machine learning concepts with clear, step-by
 
 ### Decision Trees
 
-- **[decision_tree_samples_and_leaves.py](examples/decision_tree_samples_and_leaves.py)**: In-depth explanation of how decision trees work
+- **[decision_tree_samples_and_leaves.py](examples/decision_tree_samples_and_leaves.py)** *(English)*: In-depth explanation of how decision trees work
   - Understand samples vs features
   - See how nodes split data
   - Trace individual predictions through the tree
   - Visualize sample distribution in leaves
+
+- **[arbol_decision_prediccion_casas.py](examples/arbol_decision_prediccion_casas.py)** *(Español)*: Ejemplo completo de árbol de decisión para predicción de precios de casas
+  - Dataset de 20 casas con visualizaciones
+  - División train/test y evaluación de métricas
+  - Análisis de overfitting e importancia de características
+  - Visualización del árbol y residuos
 
 ##  Getting Started
 
@@ -23,8 +29,11 @@ pip install -r requirements.txt
 ### Running the Examples
 
 ```bash
-# Decision tree example
+# Decision tree - Samples and leaves (English)
 python examples/decision_tree_samples_and_leaves.py
+
+# Árbol de decisión - Predicción de casas (Español)
+python examples/arbol_decision_prediccion_casas.py
 ```
 
 ##  What You'll Learn

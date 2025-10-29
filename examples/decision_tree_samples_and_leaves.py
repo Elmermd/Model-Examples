@@ -149,7 +149,7 @@ sample_example = X.iloc[0:1]
 sample_features = X.iloc[0]
 real_salary = y.iloc[0]
 
-print("\n👤 EXAMPLE PERSON (Sample #1):")
+print("\n EXAMPLE PERSON (Sample #1):")
 print(f"  Experience: {sample_features['experience']} years")
 print(f"  Education: {sample_features['education_years']} years")
 print(f"  Real salary: ${real_salary}k")
